@@ -14,7 +14,7 @@
         </div>
         <h1>Dee Jay Cristobal</h1>
         <p class="location">
-            <img src="location-icon.png" alt="Location Icon"> Naguilian, Isabela, Philippines
+            <img src="location-icon.png" alt="Location Icon"> Philippines
         </p>
         <div class="links">
             <a class="link" href="mailto:deejay.cristobal@protonmail.com">
@@ -29,7 +29,19 @@
             <a class="link" href="https://www.facebook.com/deejay.2806" target="_blank">
                 <img src="facebook-icon.png" alt="Facebook"> Facebook
             </a>
+            <a class="link" href="wifi:wpa:4G-UFI-788;12345678" id="wifi-link">
+                <img src="wifi-icon.png" alt="WiFi"> WiFi
+            </a>
         </div>
     </div>
+    <script>
+        document.getElementById('wifi-link').addEventListener('click', function(e) {
+            e.preventDefault();
+            const ssid = '4G-UFI-788';
+            const password = '12345678';
+            const wifiLink = `wifi:wpa:${ssid};${password}`;
+            window.location.href = wifiLink;
+        });
+    </script>
 </body>
 </html>
