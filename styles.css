@@ -35,6 +35,9 @@ body {
     border: 4px solid #333;
     overflow: hidden;
     margin: -50px auto 10px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .profile-pic img {
